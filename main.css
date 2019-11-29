@@ -1,26 +1,35 @@
-section {
+body {
     box-sizing: border-box;
 }
 
 .FreshLife {
     background-image: url("web/image/strawberry.jpg");
     background-size: cover;
+    background-position: center;
     min-height: 1000px;
     font-family: 'Raleway', sans-serif;
     position: relative;
 }
 
+
+/* Блок навiгації */
+
 .navigation--margin {
-    margin: 0 11%;
+    margin: 0px;
+    position: fixed;
+    height: 147px;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.35);
 }
 
 .navigation__logo--style {
     /*margin-right: 487px;*/
-    margin-left: 0px;
-    margin-top: 0px;
+    margin-left: 11%;
+    margin-top: 50px;
     width: 127px;
-    padding-top: 50px;
-    padding-bottom: 0px;
+    margin-bottom: 0px;
     font-family: 'Pacifico', cursive;
     font-size: 50px;
     float: left;
@@ -29,9 +38,11 @@ section {
 .navigation-list--styling {
     font-size: 0;
     list-style-type: none;
-    padding-top: 67px;
+    margin-top: 69px;
     padding-left: 0;
-    margin-left: 50%;
+    
+    margin-right: 11%;
+    float: right;
     
 }
 
@@ -40,7 +51,7 @@ section {
     font-size: 16px;
     font-size: 16px;
     font-weight: 700;
-    line-height:1.5 ;
+    
 }
 
 .navigation-list__item--margin {
@@ -51,6 +62,7 @@ section {
 .navigation__link {
     text-decoration: none;
     color: #000;
+    padding-top: 6px;
 }
 
 .navigation__link:hover {
@@ -58,13 +70,17 @@ section {
     cursor: pointer;
 }
 
-.FreshLife-block {
- clear: both;
+/*  Блок з полуничкою  */
+
+
+.FreshLife {
+    margin-top: -50px;
+
 }
 
 .FreshLife-block__title {
 margin-left: 11%;
-margin-top: 264px;
+padding-top: 360px;
 margin-bottom: 0;
 font-size: 60px;
 font-weight: 900;
@@ -110,14 +126,16 @@ max-width: 290px;
     right: 0;
 }
 
-.scroll img:active{
-    transform: scale(1.2);
+.scroll a:active {
+    transition-duration: 1s;
 }
 
+/*  Блок з чашкою малини  */
 
 .AboutUs {
     background-image: url("web/image/backgr-blue.png");
     background-size: cover;
+    background-repeat: repeat-y;
     min-height: 700px;
     font-family: 'Raleway', sans-serif;
     color: #fff;
@@ -125,17 +143,22 @@ max-width: 290px;
 
 
 .AboutUs-block {
-    position: relative;
-    top: 180px;
-    float: right;
     margin-right: 11% ;
-   
+    max-width: 503px;
+    float: right;
+    margin-top:170px ;
 }
 
 .AboutUs__photo--position {
-    margin-top: 50px;
-    margin-left: 7%; 
-    float: left; 
+    margin-top: 0px;
+    margin-left: 6%; 
+    padding-top: 30px;
+    width: 60%;
+    max-width: 650px;
+}
+
+.AboutUs__photo--position img{
+    width: 100%;
 }
 
 .AboutUs-block__title {
@@ -149,8 +172,6 @@ max-width: 290px;
     font-weight: 300;
     max-width: 483px;
     margin: 20px 0;
-    
-    
 }
 
 .AboutUs-block__text--width {
